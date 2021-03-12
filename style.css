@@ -1,0 +1,20 @@
+form {
+  padding-top: 40px;
+}
+#days {
+  margin: 0 auto;
+  position: static;
+  padding: 40px;
+  text-align: center;
+}
+.container {
+  padding-top: 50px;
+}
+.border {
+  padding: 10px;
+}
+
+#main-temp,
+#emoji {
+  font-size: 45px;
+}
