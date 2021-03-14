@@ -1,6 +1,7 @@
 form {
   padding-top: 40px;
 }
+
 #days {
   margin: 0 auto;
   position: static;
@@ -10,11 +11,39 @@ form {
 .container {
   padding-top: 50px;
 }
-.border {
-  padding: 10px;
-}
 
 #main-temp,
 #emoji {
   font-size: 45px;
+}
+small {
+  text-align: center;
+}
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+body {
+  /* The image used */
+  background-image: url("https://images.squarespace-cdn.com/content/v1/55cfb535e4b061baebe310df/1587472623697-IC8B3J3ZIZI0AMIE7U8G/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/sky+photo+for+website+home+page.jpeg?format=2500w");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#border {
+  border: 1px solid gray;
+  box-shadow: 2px 4px 4px rgba(00, 00, 00, 0.5);
+  border-radius: 20px;
+  /* background-color: rgba(255, 255,255, 0.2); */
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #eceff6;
+  text-shadow: 0.5px 0.5px 0.5px #a7c5eb;
+  background-color: rgba(0, 0, 0, 0.3);
 }
