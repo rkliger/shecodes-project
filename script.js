@@ -1,3 +1,5 @@
+let celsiusTemp = null;
+
 function getFormattedDate() {
   let now = new Date();
 
@@ -55,6 +57,7 @@ function search(event) {
     alert("Please type a city");
   }
 }
+//Get city weather API
 
 function searchCity(city) {
   let apiKey = "4b90d6a93fd778a0f497d305f97fdb36";
@@ -70,7 +73,7 @@ form.addEventListener("submit", search);
 function convertC(event) {
   event.preventDefault();
   let tempC = document.querySelector("#main-temp");
-  tempC.innerHTML = 15;
+  tempC.innerHTML = `${Math.round(celsiusTemp)}°`;
 }
 
 let celsius = document.querySelector("#c-link");
@@ -79,13 +82,13 @@ celsius.addEventListener("click", convertC);
 function convertF(event) {
   event.preventDefault();
   let tempF = document.querySelector("#main-temp");
-  tempF.innerHTML = Math.round(15 * 1.8) + 32;
+  tempF.innerHTML = `${Math.round((celsiusTemp * 9) / 5 + 32)}°`;
 }
 
 let fahrenheit = document.querySelector("#f-link");
 fahrenheit.addEventListener("click", convertF);
 
-//Get city's weather API
+//Show city's weather API
 
 function showTemperature(response) {
   console.log(response.data);
@@ -97,6 +100,8 @@ function showTemperature(response) {
   let mainTemp = document.querySelector("#main-temp");
   let feels = Math.round(response.data.main.feels_like);
   let actualFeels = document.querySelector("#feels");
+
+  celsiusTemp = response.data.main.temp;
 
   mainTemp.innerHTML = `${temperature}°`;
   actualHumidity.innerHTML = `${humidity}%`;
