@@ -98,7 +98,7 @@ function showTemperature(response) {
   let feels = Math.round(response.data.main.feels_like);
   let actualFeels = document.querySelector("#feels");
 
-  mainTemp.innerHTML = `${temperature}°C`;
+  mainTemp.innerHTML = `${temperature}°`;
   actualHumidity.innerHTML = `${humidity}%`;
   actualWind.innerHTML = `${wind} m/s`;
   actualFeels.innerHTML = `${feels}°`;
