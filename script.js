@@ -97,6 +97,7 @@ function showTemperature(response) {
   let humidity = response.data.main.humidity;
   let actualWind = document.querySelector("#wind");
   let wind = response.data.wind.speed;
+
   let mainTemp = document.querySelector("#main-temp");
   let feels = Math.round(response.data.main.feels_like);
   let actualFeels = document.querySelector("#feels");

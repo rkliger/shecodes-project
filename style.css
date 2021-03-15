@@ -1,5 +1,11 @@
 form {
   padding-top: 40px;
+  display: block;
+  width: 100%;
+}
+
+#search-button {
+  color: #eceff6;
 }
 
 #days {
@@ -49,4 +55,8 @@ html {
   text-shadow: 0.5px 0.5px 0.5px #a7c5eb;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
+}
+
+svg {
+  font-size: large;
 }
