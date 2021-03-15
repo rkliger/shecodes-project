@@ -100,6 +100,7 @@ function showTemperature(response) {
   let mainTemp = document.querySelector("#main-temp");
   let feels = Math.round(response.data.main.feels_like);
   let actualFeels = document.querySelector("#feels");
+  let iconElement = document.querySelector("#icon");
 
   celsiusTemp = response.data.main.temp;
 
@@ -107,4 +108,10 @@ function showTemperature(response) {
   actualHumidity.innerHTML = `${humidity}%`;
   actualWind.innerHTML = `${wind} m/s`;
   actualFeels.innerHTML = `${feels}°`;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
+searchCity("Miami");
