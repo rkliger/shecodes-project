@@ -3,9 +3,13 @@ form {
   display: block;
   width: 100%;
 }
+button:hover {
+  opacity: 0.9;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
+}
 
 #search-button {
-  color: #eceff6;
+  background-color: transparent;
 }
 
 #days {
@@ -55,8 +59,4 @@ html {
   text-shadow: 0.5px 0.5px 0.5px #a7c5eb;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
-}
-
-svg {
-  font-size: large;
 }

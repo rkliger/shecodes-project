@@ -19,15 +19,20 @@
       <div class="imageOverlay" id = "border">
         <div class="mb-3">
           <form id="search-form">
-            <label for="exampleInputEmail1" class="form-label"></label>
-            <input
-              type="text"
-              class="mb-3"
-              id="enter-city"
-              aria-describedby="emailHelp"
-              placeholder="Enter city..."
-						/>
-						<button type="submit" class="btn btn-primary" id = "search-button">Search</button>
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="enter-city"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter city..."
+                />
+              </div>
+              <div class="col-3">
+                <button type="submit" class="btn btn-secondary" id = "search-button">Search</button>
+              </div>
+            </div>
 					</form>
 			
         </div>
@@ -59,7 +64,7 @@
 					</div>
 
 					<div class="row">
-							<div class="col-8" id = "description"></div>
+							<div class="col-8" id = "description">Description</div>
 						<div class="col-2">Humidity</div>
 						<div class="col-2" id = "humidity">45%</div>
 				
@@ -128,9 +133,11 @@
    </div>
     </div>
     <br>
-  <small>
+    <p class="text-center">
+    <small>
       <a href = "https://github.com/rkliger?tab=repositories" target="_blank"><span class = "underline">Open-source code</span></a> by Rachel Kliger
-  </small>
+    </small>
+  </p>
       <script src="script.js"></script>
 </body>
 </html>

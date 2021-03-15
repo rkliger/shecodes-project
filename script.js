@@ -97,7 +97,8 @@ function showTemperature(response) {
   let humidity = response.data.main.humidity;
   let actualWind = document.querySelector("#wind");
   let wind = response.data.wind.speed;
-
+  let actualDescription = document.querySelector("#descrip");
+  let description = response.data.main.description;
   let mainTemp = document.querySelector("#main-temp");
   let feels = Math.round(response.data.main.feels_like);
   let actualFeels = document.querySelector("#feels");
@@ -109,6 +110,7 @@ function showTemperature(response) {
   actualHumidity.innerHTML = `${humidity}%`;
   actualWind.innerHTML = `${wind} m/s`;
   actualFeels.innerHTML = `${feels}°`;
+  actualDescriptio = `${description}`;
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
