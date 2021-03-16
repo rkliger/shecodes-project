@@ -4,12 +4,14 @@ form {
   width: 100%;
 }
 button:hover {
-  opacity: 0.9;
   box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
 }
 
 #search-button {
   background-color: transparent;
+}
+#descrip::first-letter {
+  text-transform: capitalize;
 }
 
 #days {
